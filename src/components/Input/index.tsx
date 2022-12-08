@@ -10,13 +10,7 @@ const Input = ({ control, name, errorMessage, ...rest }: IInputProps) => {
           control={control}
           name={name}
           render={({ field: { onChange, onBlur, value, ref } }) => (
-            <input
-              {...rest}
-              onChange={onChange}
-              onBlur={onBlur}
-              value={value}
-              ref={ref}
-            />
+            <input {...rest} onChange={onChange} onBlur={onBlur} value={value} ref={ref}/>
           )}
         />
       </InputContainer>
